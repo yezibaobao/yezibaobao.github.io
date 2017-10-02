@@ -61,10 +61,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="ew-第一次学习笔记" class="article article-type-ew" itemscope itemprop="blogPost">
+    <article id="post-第一次学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/02/第一次学习笔记/" class="article-date">
-  <time datetime="2017-10-02T11:29:07.000Z" itemprop="datePublished">2017-10-02</time>
+  <time datetime="2017-10-02T12:59:06.000Z" itemprop="datePublished">2017-10-02</time>
 </a>
     
   </div>
@@ -83,8 +83,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。</p>
-<p>一、语言的学习<br>1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。<br>2.字符串复制：<br>System提供了一个静态方法arraycopy(),我们可以使用它来实现数组之间的复制。其函数原型是： public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length) src:源数组； srcPos:源数组要复制的起始位置； dest:目的数组； destPos:目的数组放置的起始位置； length:复制的长度。 注意：src and dest都必须是同类型或者可以进行转换类型的数组．<br>字符数组复制：<br>getChars(int srcBegin, int srcEnd, char [ ] dst, int dstBegin)将原数组从下标srcBegin到srcEnd-1的子串复制到字符数组dst中下标从dstBegin位置开始。</p>
+        <p>一、语言的学习<br>1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。<br>2.字符串复制：<br>System提供了一个静态方法arraycopy(),我们可以使用它来实现数组之间的复制。其函数原型是： public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length) src:源数组； srcPos:源数组要复制的起始位置； dest:目的数组； destPos:目的数组放置的起始位置； length:复制的长度。 注意：src and dest都必须是同类型或者可以进行转换类型的数组．<br>字符数组复制：<br>getChars(int srcBegin, int srcEnd, char [ ] dst, int dstBegin)将原数组从下标srcBegin到srcEnd-1的子串复制到字符数组dst中下标从dstBegin位置开始。</p>
 <p>import java.math.*;<br>public class LargeFactorial {<br>    public static void main(String[] args) {<br>        // TODO Auto-generated method stub<br>        System.out.println( “50! is \n” + factorial(50) );<br>        }<br>        public static BigInteger factorial( long n ) {<br>            BigInteger result = BigInteger.ONE;<br>            for( int i = 1; i &lt;= n; i++)<br>                result = result.multiply( new BigInteger(i + “”));<br>            return result;<br>        }<br>    }<br>这是一个50的阶乘，自己敲代码的时候产生了一个疑惑，字体倾斜的这条语句中“”之间如果添加了空格(i + “ “)，会报错。(“” + i)这样变化结果是不会改变的。查看书中例题发现原来是因为空格会被记录在字符串中，而遇到该公式，空格是不能参与计算的。</p>
 <p>二、搭建独立域名的博客<br>主要步骤有这些：1.安装Node.js和git；<br>　　　  2.注册Guthub账号；<br>　　　  3.安装Hexo；<br>　　　  4.将本地hexo项目托管到Github；<br>　　　  5.申请域名并进行解析设置。<br>我在第1,2步中没有出现问题，但在执行第3步时，无法正常执行，问题是因为我通过cmd命令台而不是git bash进行安装。在第4步时，也不尽如人意，后来查了各种类似问题的解决方法，知道了问题所在：我的仓库名设置得与我的Github名称不一致，显示不出来。<br>在经过整个搭建过程之后，对hexo这个博客框架以及Github这个软件项目的托管平台有了初步的认识。
 　　　</p>
@@ -92,7 +91,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/02/第一次学习笔记/" data-id="cj8a6ivxf0001r4uee1f8hdm2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/02/第一次学习笔记/" data-id="cj8a6o6ch0002gsuel232xcj8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/02/hello-world/" data-id="cj8a6ivwz0000r4uetwmonhig" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/02/hello-world/" data-id="cj8a6o6c20000gsuesreqxra9" class="article-share-link">Share</a>
       
       
     </footer>
