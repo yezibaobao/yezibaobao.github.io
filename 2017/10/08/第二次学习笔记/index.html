@@ -6,18 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://cyzzyc.xyz/07.png">
-  <title>第一次学习笔记 | Workstation of YeZi.</title>
+  <title>Workstation of YeZi.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、语言的学习1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。2.字符串复制：System提供了一个静态方法arraycopy(),我们可以使用它来实现数组之间的复制。其函数原型是： public static void arraycopy(Object src, int srcPos, Object dest, int des">
-<meta property="og:type" content="article">
-<meta property="og:title" content="第一次学习笔记">
-<meta property="og:url" content="http://cyzzyc.xyz/07.png/2017/10/02/第一次学习笔记/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="Workstation of YeZi.">
+<meta property="og:url" content="http://cyzzyc.xyz/07.png/2017/10/08/第二次学习笔记/index.html">
 <meta property="og:site_name" content="Workstation of YeZi.">
-<meta property="og:description" content="一、语言的学习1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。2.字符串复制：System提供了一个静态方法arraycopy(),我们可以使用它来实现数组之间的复制。其函数原型是： public static void arraycopy(Object src, int srcPos, Object dest, int des">
-<meta property="og:updated_time" content="2017-10-02T13:00:23.916Z">
+<meta property="og:updated_time" content="2017-10-08T11:27:34.098Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一次学习笔记">
-<meta name="twitter:description" content="一、语言的学习1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。2.字符串复制：System提供了一个静态方法arraycopy(),我们可以使用它来实现数组之间的复制。其函数原型是： public static void arraycopy(Object src, int srcPos, Object dest, int des">
+<meta name="twitter:title" content="Workstation of YeZi.">
   
     <link rel="alternative" href="/atom.xml" title="Workstation of YeZi." type="application/atom+xml">
   
@@ -159,31 +156,12 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第一次学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第二次学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      第一次学习笔记
-    </h1>
-  
-
-        
-        <a href="/2017/10/02/第一次学习笔记/" class="archive-article-date">
-  	<time datetime="2017-10-02T12:59:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-02</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一、语言的学习<br>1.对于类中方法的定义，Java和C++有一些不同，C++可以在外内声明，类外定义，但Java只能是类内声明类内定义。<br>2.字符串复制：<br>System提供了一个静态方法arraycopy(),我们可以使用它来实现数组之间的复制。其函数原型是： public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length) src:源数组； srcPos:源数组要复制的起始位置； dest:目的数组； destPos:目的数组放置的起始位置； length:复制的长度。 注意：src and dest都必须是同类型或者可以进行转换类型的数组．<br>字符数组复制：<br>getChars(int srcBegin, int srcEnd, char [ ] dst, int dstBegin)将原数组从下标srcBegin到srcEnd-1的子串复制到字符数组dst中下标从dstBegin位置开始。</p>
-<p>import java.math.*;<br>public class LargeFactorial {<br>    public static void main(String[] args) {<br>        // TODO Auto-generated method stub<br>        System.out.println( “50! is \n” + factorial(50) );<br>        }<br>        public static BigInteger factorial( long n ) {<br>            BigInteger result = BigInteger.ONE;<br>            for( int i = 1; i &lt;= n; i++)<br>                result = result.multiply( new BigInteger(i + “”));<br>            return result;<br>        }<br>    }<br>这是一个50的阶乘，自己敲代码的时候产生了一个疑惑，字体倾斜的这条语句中“”之间如果添加了空格(i + “ “)，会报错。(“” + i)这样变化结果是不会改变的。查看书中例题发现原来是因为空格会被记录在字符串中，而遇到该公式，空格是不能参与计算的。</p>
-<p>二、搭建独立域名的博客<br>主要步骤有这些：1.安装Node.js和git；<br>　　　  2.注册Guthub账号；<br>　　　  3.安装Hexo；<br>　　　  4.将本地hexo项目托管到Github；<br>　　　  5.申请域名并进行解析设置。<br>我在第1,2步中没有出现问题，但在执行第3步时，无法正常执行，问题是因为我通过cmd命令台而不是git bash进行安装。在第4步时，也不尽如人意，后来查了各种类似问题的解决方法，知道了问题所在：我的仓库名设置得与我的Github名称不一致，显示不出来。<br>在经过整个搭建过程之后，对hexo这个博客框架以及Github这个软件项目的托管平台有了初步的认识。
-　　　</p>
-
+        
       
 
       
@@ -262,7 +240,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://cyzzyc.xyz/07.png/2017/10/02/第一次学习笔记/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://cyzzyc.xyz/07.png/2017/10/08/第二次学习笔记/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,7 +254,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/10/08/第二次学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/10/08/~$一次学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -286,8 +264,8 @@
     </a>
   
   
-    <a href="/2017/10/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2017/10/02/第一次学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一次学习笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
