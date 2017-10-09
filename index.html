@@ -172,7 +172,7 @@
 void show(){
     System.out.println(&quot;show run&quot;);    
 }
-</code></pre><p>　　}<br>运行结果为：<br>　　<br>　　<br>　　<br>　　<br>　　由以上可知，静态代码块随着类的加载而执行，而且只执行一次。<br>　　在此之中，还遇上了构造代码块的相关问题，对其的作用还在探究当中。<br>二、独立域名的博客的装饰<br>　　1.原本博客自配的主题色调比较暗淡，于是挑选了一个比较大众，简单大方的yilia主题，进行了主题的更换，主题更换主要有以下步骤：<br>　　（1）下载：在theme文件夹下git bash here输入：git clone 下载路径。<br>　　（2）更换主题：对Hexo目录下的全局配置文件_config.yml,找到theme所在行，         改theme：主题名。<br>注意：每个语句冒号后一定要加空格。<br>　　2.更换头像<br>　　找到自己正在使用的主题文件下的_config.yml编辑文件中的avator： /img/图片。（注意头像要放在该主题文件夹下存放图片的img文件夹中）<br>　　此时，头像很可能依旧显示不出来。<br>　　修改layout/_pertial/left-col.ejs的地六行为：<br>　　<img src="<%=theme.avatar%>" class="js-avatar show"><br>　　网上很多版本说还要改第八行为<img src="<%=theme.avatar%>" class="js-avatar show" style="width: 100%;height: 100%"><br>　　但我发现第八行改成这样之后，只是在头像下多添了一个跟头像一样的图片，应该这个语句就是这个意思，之后我会再研究一下。</p>
+</code></pre><p>　　}<br>运行结果为：<br>　　Hahaha<br>　　Show run<br>　　　　<br>　　由以上可知，静态代码块随着类的加载而执行，而且只执行一次。<br>　　在此之中，还遇上了构造代码块的相关问题，对其的作用还在探究当中。<br>二、独立域名的博客的装饰<br>　　1.原本博客自配的主题色调比较暗淡，于是挑选了一个比较大众，简单大方的yilia主题，进行了主题的更换，主题更换主要有以下步骤：<br>　　（1）下载：在theme文件夹下git bash here输入：git clone 下载路径。<br>　　（2）更换主题：对Hexo目录下的全局配置文件_config.yml,找到theme所在行，         改theme：主题名。<br>注意：每个语句冒号后一定要加空格。<br>　　2.更换头像<br>　　找到自己正在使用的主题文件下的_config.yml编辑文件中的avator： /img/图片。（注意头像要放在该主题文件夹下存放图片的img文件夹中）<br>　　此时，头像很可能依旧显示不出来。<br>　　修改layout/_pertial/left-col.ejs的地六行为：<br>　　&lt;img src=”&lt;%=theme.avatar%&gt;” class=”js-avatar show” &gt;<br>　　网上很多版本说还要改第八行为&lt;img src=”&lt;%=theme.avatar%&gt;” class=”js-avatar show” style=”width: 100%;height: 100%”&gt;<br>　　但我发现第八行改成这样之后，只是在头像下多添了一个跟头像一样的图片，应该这个语句就是这个意思，之后我会再研究一下。</p>
 
       
 
