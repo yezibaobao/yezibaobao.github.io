@@ -17,7 +17,7 @@
 <meta property="og:image" content="http://cyzzyc.xyz/img/多态时成员变量的特点.png">
 <meta property="og:image" content="http://cyzzyc.xyz/img/多态时成员函数的特点.png">
 <meta property="og:image" content="http://cyzzyc.xyz/img/多态时静态函数的特点.png">
-<meta property="og:updated_time" content="2017-10-13T13:44:59.874Z">
+<meta property="og:updated_time" content="2017-10-13T13:53:21.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Workstation of YeZi.">
 <meta name="twitter:description" content="第三次 学习报告    这一周的周记是从周一到周五的，因为上周的周记拖延了，所以显得这周内容可能有些少。首先，汇报一下这一周我做了写啥，除了平日要做的课程学习和英语每日一百词的背诵外，继上周继续学习的有：a. Java，并对其按自己易懂的方式进行一定知识点的归类整理。b. 对自己博客进行优化，学习如何使代码高亮，如何在插入图片、链接等。 下一周学习计划：a. 学习Python语言，为学习\”知识图">
@@ -173,13 +173,12 @@
                 b. 学习如何在博客中插视频，也想要探究一下怎么让博客以某种动                           态形式呈现\(如鼠标点击一个图片，使其呈现另一种动态效果\)；
                 C. 对天池大赛做进一步学习，准备参赛。
 下面是对本周学习内容中的重要部分做的详细记录。
-</code></pre><p>一、上周遗留已解决问题<br>    上周提及构造代码块的相关问题，再次先说明，构造代码块是直接在类中定义且没有加static关键字的代码块称为{}构造代码块。构造代码块在创建对象时被调用，每次创建对象都会被调用，并且构造代码块的执行次序优先于类构造函数。<br>详细内容可见：<a href="http://www.cnblogs.com/sophine/p/3531282.html/" target="_blank" rel="external">http://www.cnblogs.com/sophine/p/3531282.html/</a></p>
-<p>二、Java学习之多态时的类成员<br>首先我觉得先说明一下我理解的多态，多态：父类或者接口的引用指向其子类对象。<br>1.成员变量：<br>      编译时：参考应用型变量所属的类中是否调用成员变量，有，编译通过，没有，编译               失败。<br>      运行时：参考应用型变量所属的类中是否调用的成员变量，并运行该所所属中的成员                变量。<br>      简单说：编译和运行都看复制符号的左边。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">class Fu</div><div class="line">	&#123;</div><div class="line">		int num = 3;</div><div class="line">	&#125;</div><div class="line">	class Zi extends Fu</div><div class="line">	&#123;</div><div class="line">		int num = 4;</div><div class="line">	&#125;</div><div class="line">	public class Lotte &#123;</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		Fu f = new Zi();</div><div class="line">		System.out.println(f.num);</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="/img/多态时成员变量的特点.png" alt="“多态时成员变量的特点”"><br>2.成员函数：<br>      编译时：参考应用型变量所属的类中是否调用成员函数，有，编译通过，没有，编译               失败。<br>      运行时：参考应用型变量所属的类中是否调用的成员函数。<br>      简单说：编译看复制符号的左边，运行看复制符号的右边。<br><img src="/img/多态时成员函数的特点.png" alt="“多态时成员函数的特点”"><br>3.静态函数：<br>      编译时：参考应用型变量所属的类中是否调用静态函数，<br>      运行时：参考应用型变量所属的类中是否调用的静态函数。<br>      简单说：编译和运行都看复制符号的左边。<br><img src="/img/多态时静态函数的特点.png" alt="“多态时静态函数的特点”"></p>
-<p>三、博客优化</p>
+</code></pre><p>一、上周遗留已解决问题<br>    上周提及构造代码块的相关问题，再次先说明，构造代码块是直接在类中定义且没有加static关键字的代码块称为{}构造代码块。构造代码块在创建对象时被调用，每次创建对象都会被调用，并且构造代码块的执行次序优先于类构造函数。<br>详细内容可见：<a href="http://www.cnblogs.com/sophine/p/3531282.html/" target="_blank" rel="external">http://www.cnblogs.com/sophine/p/3531282.html/</a><br>二、Java学习之多态时的类成员<br>首先我觉得先说明一下我理解的多态，多态：父类或者接口的引用指向其子类对象。<br>1.成员变量：<br>      编译时：参考应用型变量所属的类中是否调用成员变量，有，编译通过，没有，编译               失败。<br>      运行时：参考应用型变量所属的类中是否调用的成员变量，并运行该所所属中的成员                变量。<br>      简单说：编译和运行都看复制符号的左边。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">class Fu</div><div class="line">	&#123;</div><div class="line">		int num = 3;</div><div class="line">	&#125;</div><div class="line">	class Zi extends Fu</div><div class="line">	&#123;</div><div class="line">		int num = 4;</div><div class="line">	&#125;</div><div class="line">	public class Lotte &#123;</div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		Fu f = new Zi();</div><div class="line">		System.out.println(f.num);</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="/img/多态时成员变量的特点.png" alt="“多态时成员变量的特点”"><br>2.成员函数：<br>      编译时：参考应用型变量所属的类中是否调用成员函数，有，编译通过，没有，编译               失败。<br>      运行时：参考应用型变量所属的类中是否调用的成员函数。<br>      简单说：编译看复制符号的左边，运行看复制符号的右边。<br><img src="/img/多态时成员函数的特点.png" alt="“多态时成员函数的特点”"><br>3.静态函数：<br>      编译时：参考应用型变量所属的类中是否调用静态函数，<br>      运行时：参考应用型变量所属的类中是否调用的静态函数。<br>      简单说：编译和运行都看复制符号的左边。<br><img src="/img/多态时静态函数的特点.png" alt="“多态时静态函数的特点”"><br>三、博客优化</p>
 <pre><code>1. 如何调节使代码高亮？
         格式是  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//代码内容</div></pre></td></tr></table></figure>
 
+试验后没有成功，下个礼拜继续研究。
 2. 超链接
     [ ]里写链接文字，( )里写链接地址, ( )中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。[链接文字](链接地址 “链接标题”)’这样的形式。链接地址与链接标题前有一个空格。
 
@@ -277,15 +276,6 @@
 
   
 <nav id="article-nav">
-  
-    <a href="/2017/10/13/~$第三周/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
   
     <a href="/2017/10/08/第二次学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
