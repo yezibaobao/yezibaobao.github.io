@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://cyzzyc.xyz/07.png">
-  <title>第五次学习笔记 | Workstation of YeZi.</title>
+  <title>第六次学习笔记 | Workstation of YeZi.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="每周总觉得自己忙忙碌碌，但细想总觉的似乎没有做什么，还是得总结一下这周完成的学习，鞭策加鼓励一下自己。1.学习了Gene Ontology一个模型，大致了解了搭建模型的过程；2.继续Python的学习，笔记做得比较慢，学的比做出的笔记要多一些，自己需要提高写博客的效率。——Python快速入门（二）；3.进行了知识图谱的学习；4.进入飞机大战游戏制作的初步阶段，这是一款基于Python语言的简易小">
+  <meta name="description" content="这一周，对知识图谱有了进一步的了解，对本体这个东西进行了比较深入的了解，Ontology（中文称为：本体）是一种描述术语（包含哪些词汇）及术语间关系（描述苹果、香蕉、水果之间的关系）的概念模型。用一句话就可以概括——本体定义了组成“主题领域”的词汇表的“基本术语”及其“关系”，以及结合这些术语和关系来定义词汇表外延的“规则”。下面将根据其中涉及到的四个关键词一步步来看本体是如何建立的：第一，领域，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第五次学习笔记">
-<meta property="og:url" content="http://cyzzyc.xyz/07.png/2017/10/27/第五次学习笔记/index.html">
+<meta property="og:title" content="第六次学习笔记">
+<meta property="og:url" content="http://cyzzyc.xyz/07.png/2017/11/03/第六次学习笔记/index.html">
 <meta property="og:site_name" content="Workstation of YeZi.">
-<meta property="og:description" content="每周总觉得自己忙忙碌碌，但细想总觉的似乎没有做什么，还是得总结一下这周完成的学习，鞭策加鼓励一下自己。1.学习了Gene Ontology一个模型，大致了解了搭建模型的过程；2.继续Python的学习，笔记做得比较慢，学的比做出的笔记要多一些，自己需要提高写博客的效率。——Python快速入门（二）；3.进行了知识图谱的学习；4.进入飞机大战游戏制作的初步阶段，这是一款基于Python语言的简易小">
-<meta property="og:updated_time" content="2017-10-27T13:43:19.667Z">
+<meta property="og:description" content="这一周，对知识图谱有了进一步的了解，对本体这个东西进行了比较深入的了解，Ontology（中文称为：本体）是一种描述术语（包含哪些词汇）及术语间关系（描述苹果、香蕉、水果之间的关系）的概念模型。用一句话就可以概括——本体定义了组成“主题领域”的词汇表的“基本术语”及其“关系”，以及结合这些术语和关系来定义词汇表外延的“规则”。下面将根据其中涉及到的四个关键词一步步来看本体是如何建立的：第一，领域，">
+<meta property="og:image" content="http://img.blog.csdn.net/20171105153552089?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQwNzE4ODY1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-11-05T07:57:11.561Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第五次学习笔记">
-<meta name="twitter:description" content="每周总觉得自己忙忙碌碌，但细想总觉的似乎没有做什么，还是得总结一下这周完成的学习，鞭策加鼓励一下自己。1.学习了Gene Ontology一个模型，大致了解了搭建模型的过程；2.继续Python的学习，笔记做得比较慢，学的比做出的笔记要多一些，自己需要提高写博客的效率。——Python快速入门（二）；3.进行了知识图谱的学习；4.进入飞机大战游戏制作的初步阶段，这是一款基于Python语言的简易小">
+<meta name="twitter:title" content="第六次学习笔记">
+<meta name="twitter:description" content="这一周，对知识图谱有了进一步的了解，对本体这个东西进行了比较深入的了解，Ontology（中文称为：本体）是一种描述术语（包含哪些词汇）及术语间关系（描述苹果、香蕉、水果之间的关系）的概念模型。用一句话就可以概括——本体定义了组成“主题领域”的词汇表的“基本术语”及其“关系”，以及结合这些术语和关系来定义词汇表外延的“规则”。下面将根据其中涉及到的四个关键词一步步来看本体是如何建立的：第一，领域，">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20171105153552089?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQwNzE4ODY1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="Workstation of YeZi." type="application/atom+xml">
   
@@ -159,28 +161,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第五次学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第六次学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第五次学习笔记
+      第六次学习笔记
     </h1>
   
 
         
-        <a href="/2017/10/27/第五次学习笔记/" class="archive-article-date">
-  	<time datetime="2017-10-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-27</time>
+        <a href="/2017/11/03/第六次学习笔记/" class="archive-article-date">
+  	<time datetime="2017-11-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>每周总觉得自己忙忙碌碌，但细想总觉的似乎没有做什么，还是得总结一下<strong>这周完成的学习</strong>，鞭策加鼓励一下自己。<br>1.学习了Gene Ontology一个模型，大致了解了搭建模型的过程；<br>2.继续Python的学习，笔记做得比较慢，学的比做出的笔记要多一些，自己需要提高写博客的效率。——<a href="http://blog.csdn.net/weixin_40718865/article/details/78364875" target="_blank" rel="external">Python快速入门（二）</a>；<br>3.进行了知识图谱的学习；<br>4.进入飞机大战游戏制作的初步阶段，这是一款基于Python语言的简易小游戏；<br>5.尝试了在博客中加入动态背景，但是失败了，还未找到解决办法。</p>
-<p>下周的期盼：<br>1.完成博客的动态背景设置；<br>2.制作出飞机大战的雏形；</p>
+        <p>这一周，对知识图谱有了进一步的了解，对本体这个东西进行了比较深入的了解，Ontology（中文称为：本体）是一种描述术语（包含哪些词汇）及术语间关系（描述苹果、香蕉、水果之间的关系）的概念模型。用一句话就可以概括——本体定义了组成“主题领域”的词汇表的“基本术语”及其“关系”，以及结合这些术语和关系来定义词汇表外延的“规则”。<br>下面将根据其中涉及到的四个关键词一步步来看本体是如何建立的：<br>第一，领域，一个本体描述的是一个特定的领域。比如我们确定这次要描述的领域是“本科”；<br>第二，术语，指的是给定领域中的重要概念。例如，确定要描述“本科”了，对于一个大学来说什么概念是重要的呢？我们可以列举出“教工”、“学生”、“课程”等等概念。<br>第三，基本术语之间的关系，包括类的层次结构。列举出了“教工”，“学生”等这些重要的概念，那么这些概念之间是什么关系呢？并列？上下位类？下图就是对“老师和学生“之间的层次关系。<br><img src="http://img.blog.csdn.net/20171105153552089?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQwNzE4ODY1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>以上这些都是我从《An Education Ontology for Global City Indicators (ISO 37120)》这篇论文中提取出的一些信息，并对它做了翻译：<a href="http://pan.baidu.com/s/1eS8eHBs" target="_blank" rel="external">全球城市指标的教育本体论</a>。<br>这周还学习了python中图像的移动，反转，反方向移动，这都还是比较基础的东西，飞机大战还处于一个图片刚刚会基础移动的样子，在下周会对游戏的初步制作流程做一个演示。<br>下周还要学会如何搭建一个小本体模型。</p>
 
       
 
@@ -260,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://cyzzyc.xyz/07.png/2017/10/27/第五次学习笔记/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://cyzzyc.xyz/07.png/2017/11/03/第六次学习笔记/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -274,18 +275,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/03/第六次学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/11/05/~$六次学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          第六次学习笔记
+          (no title)
         
       </div>
     </a>
   
   
-    <a href="/2017/10/20/第四次学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">第四次学习笔记</div>
+    <a href="/2017/10/27/第五次学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第五次学习笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
